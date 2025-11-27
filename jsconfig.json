@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "target": "esnext",
+        "jsx": "react-jsx",
+        "strict": true,
+        "checkJs": true,
+        "paths": {
+            "@/*": [
+                "./resources/js/*"
+            ]
+        },
+        "types": [
+            "react",
+            "react-dom"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "public",
+        "build"
+    ],
+    "include": [
+        "resources/js/**/*"
+    ]
+}
