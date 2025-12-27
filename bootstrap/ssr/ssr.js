@@ -17,7 +17,7 @@ createServer(
     page,
     render: ReactDOMServer.renderToString,
     title: (title) => `${title} - ${"Laravel"}`,
-    resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`, /* @__PURE__ */ Object.assign({ "./Pages/Welcome.jsx": () => import("./assets/Welcome-CPKXaqjI.js") })),
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`, /* @__PURE__ */ Object.assign({ "./Pages/Welcome.jsx": () => import("./assets/Welcome-Bj1Zo8FW.js") })),
     setup: ({ App, props }) => /* @__PURE__ */ jsx(App, { ...props })
   })
 );

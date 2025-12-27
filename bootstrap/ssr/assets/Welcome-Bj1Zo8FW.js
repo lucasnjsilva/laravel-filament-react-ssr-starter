@@ -16,13 +16,19 @@ function Welcome() {
         /* @__PURE__ */ jsxs("main", { className: "text-center max-w-4xl mx-auto", children: [
           /* @__PURE__ */ jsx("h1", { className: "text-5xl font-extrabold tracking-tight sm:text-7xl mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-200 dark:to-gray-400", children: "Starter Kit" }),
           /* @__PURE__ */ jsxs("p", { className: "mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed", children: [
-            "A production-ready ",
+            "A production-ready",
+            " ",
             /* @__PURE__ */ jsx("strong", { className: "text-gray-900 dark:text-white", children: "Laravel 12" }),
-            " boilerplate featuring a ",
+            " ",
+            "boilerplate featuring a",
+            " ",
             /* @__PURE__ */ jsx("strong", { className: "text-orange-600 dark:text-orange-500", children: "Filament" }),
-            " admin panel and a SEO-friendly ",
+            " ",
+            "admin panel and a SEO-friendly",
+            " ",
             /* @__PURE__ */ jsx("strong", { className: "text-[#61DAFB]", children: "React" }),
-            " frontend via Inertia.js with ",
+            " frontend via Inertia.js with",
+            " ",
             /* @__PURE__ */ jsx("span", { className: "underline decoration-dotted decoration-gray-400 underline-offset-4", children: "SSR pre-configured" }),
             "."
           ] }),
@@ -68,7 +74,7 @@ function Welcome() {
         /* @__PURE__ */ jsxs("footer", { className: "absolute bottom-4 text-xs text-gray-400", children: [
           "Laravel v",
           12,
-          " (Beta) • PHP v",
+          " • PHP v",
           8.4
         ] })
       ] })

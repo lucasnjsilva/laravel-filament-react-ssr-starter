@@ -1,59 +1,77 @@
 # Starter Kit
 
-Laravel application with Filament PHP for the admin panel and Inertia.js (React) for the frontend, featuring Server-Side Rendering (SSR).
+A robust boilerplate for Laravel applications featuring **Filament PHP** for the admin dashboard and **Inertia.js (React)** with **Server-Side Rendering (SSR)** for the frontend.
 
 ## Prerequisites
 
-- PHP 8.2+
-- Composer
-- Node.js & NPM
+Before you begin, ensure you have the following installed:
+
+* **PHP:** 8.2 or higher
+* **Composer:** Latest version
+* **Node.js & NPM:** (LTS recommended)
+* **Database:** A supported database engine (SQLite, MySQL, or PostgreSQL)
 
 ## Getting Started
 
-1.  **Install Dependencies**
+Follow these steps to get your development environment up and running:
 
-    ```bash
-    composer install
-    npm install
-    ```
+### 1. Install Dependencies
 
-2.  **Environment Setup**
+First, install the backend and frontend dependencies:
 
-    ```bash
-    cp .env.example .env
-    php artisan key:generate
-    php artisan migrate
-    ```
+```bash
+composer install
+npm install
+```
 
-3.  **Generate App Key**
+### 2. Environment Configuration
 
-    ```bash
-    php artisan key:generate
-    ```
+Copy the example environment file and configure your database settings:
 
-4.  **Start Development Server**
+```bash
+cp .env.example .env
+```
 
-    This script starts Laravel, Vite, and the SSR server concurrently.
+> **Note:** Open the `.env` file and update the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` fields to match your local setup.
 
-    ```bash
-    ./start.sh
-    ```
-    *Note: If you encounter permission errors, run `chmod +x start.sh` first.*
+### 3. Application Setup
 
-5.  **Create Admin User**
+Generate the application key and run the database migrations:
 
-    ```bash
-    php artisan make:filament-user
-    ```
+```bash
+php artisan key:generate
+php artisan migrate
+```
+
+### 4. Create Admin Access
+
+To access the Filament admin panel, create your administrative user:
+
+```bash
+php artisan make:filament-user
+```
+
+## Development
+
+This project includes a helper script to run the Laravel server, Vite, and the SSR server concurrently.
+
+```bash
+# Ensure the script is executable (only needed once)
+chmod +x start.sh
+
+# Start the development environment
+./start.sh
+```
+
+* **Frontend:** [http://localhost:8000](https://www.google.com/search?q=http://localhost:8000)
+* **Admin Panel:** [http://localhost:8000/admin](https://www.google.com/search?q=http://localhost:8000/admin)
+
+---
 
 ## Building for Production
 
-To build the assets for production (Client and SSR bundles):
+To compile assets and prepare the SSR bundle for production environments:
 
 ```bash
 npm run build
 ```
-
-## Admin Panel
-
-Access the Filament admin panel at `/admin`.
